@@ -31,7 +31,7 @@ jobs:
       - name: "Update/Upload DemoFlow to design time"
         uses: engswee/flashpipe-action/sync@v1
         with:
-          tmn-host: asc-isuite-prod.integrationsuite.cfapps.eu20-001.hana.ondemand.com
+          tmn-host: asc-isuite-prod.it-cpi023.cfapps.eu20-001.hana.ondemand.com
           oauth-host: asc-isuite-prod.authentication.eu20.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
@@ -50,8 +50,8 @@ jobs:
       - name: "Deploy DemoFlow to runtime"
         uses: engswee/flashpipe-action/deploy@v1
         with:
-          tmn-host: asc-isuite-prod.integrationsuite.cfapps.eu20-001.hana.ondemand.com
-          oauth-host: equaliseit.authentication.eu20.hana.ondemand.com
+          tmn-host: asc-isuite-prod.it-cpi023.cfapps.eu20-001.hana.ondemand.com
+          oauth-host: asc-isuite-prod.authentication.eu20.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           artifact-ids: DemoFlow
