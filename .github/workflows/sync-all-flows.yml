@@ -54,4 +54,4 @@ jobs:
           oauth-host: asc-isuite-prod.authentication.eu20.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
-          artifact-ids: DemoFlow
+          artifact-ids: Script_error
