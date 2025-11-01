@@ -31,8 +31,8 @@ jobs:
       - name: "Update/Upload DemoFlow to design time"
         uses: engswee/flashpipe-action/sync@v1
         with:
-          tmn-host: asc-isuite-prod.it-cpi023.cfapps.eu20-001.hana.ondemand.com
-          oauth-host: asc-isuite-prod.authentication.eu20.hana.ondemand.com
+          tmn-host: 14ceb45ctrial.it-cpitrial06.cfapps.us10-001.hana.ondemand.com
+          oauth-host: 14ceb45ctrial.authentication.us10.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           target: tenant
@@ -50,8 +50,8 @@ jobs:
       - name: "Deploy DemoFlow to runtime"
         uses: engswee/flashpipe-action/deploy@v1
         with:
-          tmn-host: asc-isuite-prod.it-cpi023.cfapps.eu20-001.hana.ondemand.com
-          oauth-host: asc-isuite-prod.authentication.eu20.hana.ondemand.com
+          tmn-host: 14ceb45ctrial.it-cpitrial06.cfapps.us10-001.hana.ondemand.com
+          oauth-host: 14ceb45ctrial.authentication.us10.hana.ondemand.com
           oauth-clientid: ${{ secrets.DEV_CLIENT_ID }}
           oauth-clientsecret: ${{ secrets.DEV_CLIENT_SECRET }}
           artifact-ids: Script_error
